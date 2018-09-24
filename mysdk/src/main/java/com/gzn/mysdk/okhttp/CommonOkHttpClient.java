@@ -72,11 +72,8 @@ public class CommonOkHttpClient {
      * @return
      */
     public static Call get(Request request, Callback callback) {
-
         Call call = sOkHttpClient.newCall(request);
-
         call.enqueue(callback);
-
         return call;
     }
     /**
@@ -86,11 +83,8 @@ public class CommonOkHttpClient {
      * @return
      */
     public static Call post(Request request, Callback callback) {
-
         Call call = sOkHttpClient.newCall(request);
-
         call.enqueue(callback);
-
         return call;
     }
 }
